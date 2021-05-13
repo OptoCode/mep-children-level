@@ -1,0 +1,166 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="w7#!h1^u~.7*w}2It`|#">Player</variable><variable type="KIND_SpriteKind" id="jv$8AL-CNwY7pcDKl]l,">Projectile</variable><variable type="KIND_SpriteKind" id="q1ss7+46iBYev=K0QrlI">Food</variable><variable type="KIND_SpriteKind" id=":b6zG-]^*)$B:tmf^jSg">Enemy</variable><variable type="KIND_SpriteKind" id="DSk3wkk^OP0/cB6aK#}-">furtniture</variable><variable id="ALR.RC+o-WQ2YNtGgVa?">carpet01</variable><variable id=";y1[$$}chDkah7-_]J;r">shelf01</variable><variable id="G?,u5PhJaoz;f?r^QmRl">pc01</variable><variable id="H4G,$ZP:/UJ@$ENM~D?|">table01</variable><variable id="{.(^m}q9@x3L845_3P`I">child1</variable><variable id="r!2V;5zxMXnmMB/7zvcu">couch01</variable><variable id="Mm89VZDzOU3b6+@(IIsE">table02</variable></variables><block type="pxt-on-start" id="h/~wU35NF[~Wo|lif$KD" x="0" y="0"><statement name="HANDLER"><block type="tilemap_editor" id="[jp?,z~=;XMUKqT~jp./"><field name="tilemap">tilemap`level1`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level1"}}</data><next><block type="function_call" id="pIaonx*vyhIh)p:C%}-W"><mutation name="placeFurniture" functionid="ldZ7*$XgJvyDHH|mzaT-"/><next><block type="function_call" id="9GRRnq_JDk`s.rd(c)OE"><mutation name="child" functionid="1hMjjB2Y,VxLv5LU[3/H"/></block></next></block></next></block></statement></block><block type="function_definition" id="yNEK(V;h*n#eA37el`.Y" x="450" y="130"><mutation name="placeFurniture" functionid="ldZ7*$XgJvyDHH|mzaT-"/><field name="function_name">placeFurniture</field><statement name="STACK"><block type="variables_set" id="R@/:MP/!r.]+vbJlB?7A"><field name="VAR" id=";y1[$$}chDkah7-_]J;r">shelf01</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="IKK]alb%,oN5?*UpIA.u"><value name="img"><shadow type="screen_image_picker" id="F+Ctx?HnpLl4q}Snm[dq"><field name="img">img`
+.cccccccccccccccccccccc.
+cbddddddddddddddddddddbc
+cddddddddddddddddddddddc
+cddddddddddddddddddddddc
+cddddddddddddddddddddddc
+cddddddddddddddddddddddc
+cddddddddddddddddddddddc
+cbddddddddddddddddddddbc
+ccbbbbbbbbbbbbbbbbbbbbcc
+ccffffffffffffffffffffcc
+cbcc33c6c44c3c7c66c3ccbc
+cbcc33c6c44c3c7c66c3ccbc
+fbcc33c6c44ccc7c66c3ccbf
+fdccccccccccccccccccccdf
+fdcbbddddddddddddddbbcdf
+fdffffffffffffffffffffdf
+fdccc6c33c4c6c44c3c7ccdf
+fdccc6c33c4c6c44c3c7ccdf
+fdccc6c33ccc6c44ccc7ccdf
+fdccccccccccccccccccccdf
+fdcbbddddddddddddddbbcdf
+fdcbbddddddddddddddbbcdf
+fdffffffffffffffffffffdf
+ffffffffffffffffffffffff
+`</field><data>{"commentRefs":[],"fieldData":{"img":"F+Ctx?HnpLl4q}Snm[dq"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="BWUtZwbs})`S:w|`P,0X"><field name="MEMBER">furtniture</field></shadow></value></block></value><next><block type="variables_set" id="*+^vn~W,8lJV{s?GK^f3"><field name="VAR" id="ALR.RC+o-WQ2YNtGgVa?">carpet01</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="kGb/D@`E+3vR5.i5UI#k"><value name="img"><shadow type="screen_image_picker" id=":mG5U=9`pC+wv+Q5rIoF"><field name="img">img`
+..3b3b3b3b3b3b3b3b3b3b3b3b3b3b..
+.3dd3b3b3b3b3b3b3b3b3b3b3b3bdd3.
+bbdd3dddddddddddddddddddddd3ddbb
+b333dd33333333333333333333dd333b
+bbbdd3333333333333333333333ddbbb
+b33d333d3333333d3333333d3333d33b
+bbbd333333333333333333333333dbbb
+b33d333333333333333333333333d33b
+bbbd333333333333333333333333dbbb
+b33d3333333d3333333d33333333d33b
+bbbd333333333333333333333333dbbb
+b33d333333333333333333333333d33b
+bbbd333333333333333333333333dbbb
+b33d333d3333333d3333333d3333d33b
+bbbd333333333333333333333333dbbb
+b33d333333333333333333333333d33b
+bbbd333333333333333333333333dbbb
+b33d3333333d33333333d3333333d33b
+bbbdd3333333333333333333333ddbbb
+b333dd33333333333333333333dd333b
+bbdd3dddddddddddddddddddddd3ddbb
+b3dd3b3b3b3b3b3b3b3b3b3b3b3bdd3b
+.bbb3b3b3b3b3b3b3b3b3b3b3b3b3bb.
+...bbbbbbbbbbbbbbbbbbbbbbbbbb...
+`</field><data>{"commentRefs":[],"fieldData":{"img":":mG5U=9`pC+wv+Q5rIoF"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="NK2y%I]/pm1aJU%o}uSJ"><field name="MEMBER">furtniture</field></shadow></value></block></value><next><block type="variables_set" id="UsWe{4og-t9aQBV=`Ees"><field name="VAR" id="G?,u5PhJaoz;f?r^QmRl">pc01</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id=":FxYvOKcy=J)2azl/tlL"><value name="img"><shadow type="screen_image_picker" id="!C,0bUx:HZ6Hlomwa_i("><field name="img">img`
+...bbbbbbbbbb...
+..b1111111111b..
+.b111111111111b.
+.b111111111111b.
+.bddccccccccddb.
+.bdc66666666cdb.
+.bdc61d66666cdb.
+.bdc6d666666cdb.
+.bdc66666666cdb.
+.bdc66666666cdb.
+.bdc66666666cdb.
+.bddccccccccddb.
+.cbbbbbbbbbbbbc.
+fccccccccccccccf
+fbbbbbbbbbbbbbbf
+fbcdddddddddddbf
+fbcbbbbbbbbbbcbf
+fbcbbbbbbbbbbcbf
+fbccccccccccccbf
+fbbbbbbbbbbbbbbf
+fbffffffffffffbf
+ffffffffffffffff
+`</field><data>{"commentRefs":[],"fieldData":{"img":"!C,0bUx:HZ6Hlomwa_i("}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="o(AGdAJf^EN91rtOvxS2"><field name="MEMBER">furtniture</field></shadow></value></block></value><next><block type="variables_set" id="od7tCW(_ly:FFMirnLF5"><field name="VAR" id="H4G,$ZP:/UJ@$ENM~D?|">table01</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="xp}*x0X3+6;5Ln=K%2aP"><value name="img"><shadow type="screen_image_picker" id="L@EIw~}:sn-4=F;85NFa"><field name="img">img`
+..cccccccccccccccccccccccccccc..
+.bddddddddddddddddddddddddddddb.
+cddddddddddddddddddddddddddddddc
+cbbb3ddd33d3dddd3333dddd3d333bbc
+cddddddddddddddddddddddddddddddc
+cddddddddddddddddddddddddddddddc
+cddddddddddddddddddddddddddddddc
+cbb33dddd3bb33d33dd33ddd33333bbc
+cddddddddddddddddddddddddddddddc
+cddddddddddddddddddddddddddddddc
+cddddddddddddddddddddddddddddddc
+cb333dddd3db3dddddddd33333ddd3bc
+cddddddddddddddddddddddddddddddc
+cddddddddddddddddddddddddddddddc
+cddddddddddddddddddddddddddddddc
+cbbbbbb3333333dddd333d3dddd33bbc
+cddddddddddddddddddddddddddddddc
+cbddddddddddddddddddddddddddddbc
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc
+.cccccccccccccccccccccccccccccc.
+..cbbc....................cbbc..
+..c33c....................c33c..
+...cc......................cc...
+`</field><data>{"commentRefs":[],"fieldData":{"img":"L@EIw~}:sn-4=F;85NFa"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="-@.W{Rxv]Z22^hT9^9r]"><field name="MEMBER">furtniture</field></shadow></value></block></value><next><block type="variables_set" id="/W1Mo^r-z`hz3b_fP|94"><field name="VAR" id="Mm89VZDzOU3b6+@(IIsE">table02</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="o/j(%W5L;1]CZJjhHK]T"><value name="img"><shadow type="screen_image_picker" id=")}LO^M.2jLVcpLhp_r.:"><field name="img">img`
+..cccccccccccccccccccccccccccc..
+.b3333333333333333333333333333..
+c333111111111111111111111111333c
+c331133333333333333333333331133c
+c331333333333333333333333333133c
+c331333333333333333333333333133c
+c331333333333333333333333333133c
+c331333333333333333333333333133c
+c331333333333333333333333333133c
+c331333333333333333333333333133c
+c331333333333333333333333333133c
+c331333333333333333333333333133c
+c331133333333333333333333331133c
+c333111111111111111111111111333c
+cb3333333333333333333333333333bc
+cbb33333333333333333333333333bbc
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbc
+c3bbbbbbbbbbbbbbbbbbbbbbbbbbbb3c
+c3bb333bbbb333bbbb333bbbb333bb3c
+.ccbcccb33bcccb33bcccb33bcccbcc.
+..cccccccccccccccccccccccccccc..
+..cbbc....................cbbc..
+..c33c....................c33c..
+...cc......................cc...
+`</field><data>{"commentRefs":[],"fieldData":{"img":")}LO^M.2jLVcpLhp_r.:"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="$dR+EWU$Q}0+VH8KWV2f"><field name="MEMBER">furtniture</field></shadow></value></block></value><next><block type="variables_set" id="o]5%=wSn6_bM,0Ww8.@Q"><field name="VAR" id="r!2V;5zxMXnmMB/7zvcu">couch01</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="si4pz,!E!m52xc1TY}]/"><value name="img"><shadow type="screen_image_picker" id="%mK?(0jCDkJ(40(Z!oaE"><field name="img">img`
+dddddddddccccdd
+ddddddddc6777cd
+ddccccccc67776c
+dc777776c67776c
+c6677777c67776c
+c6666666c67776c
+c66cccccc67776c
+ccc67777c67776c
+dc677777c67776c
+dc677777c67776c
+dc677777c67776c
+dc677777c67776c
+dc677777c67776c
+dc677777c67776c
+dc677777c67776c
+dc677777c66776c
+dcccccccc66666c
+dc777776c66666c
+c6677777c66666c
+c6666666c66666c
+c6666666c66666c
+c6666666c66666c
+ccccccccccccccd
+dcbbcdddddcbbcd
+`</field><data>{"commentRefs":[],"fieldData":{"img":"%mK?(0jCDkJ(40(Z!oaE"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="KcVVjFU{lR*)I2PO6*_X"><field name="MEMBER">furtniture</field></shadow></value></block></value><next><block type="mapplaceonrandomtile" id="lZ=@{pXsWe}:kGNyErOk"><value name="sprite"><block type="variables_get" id="T1RjLXq`CA,*z.8{Jv}{"><field name="VAR" id="ALR.RC+o-WQ2YNtGgVa?">carpet01</field></block></value><value name="tile"><shadow type="tileset_tile_picker" id="Ydv^PksLh!^;j-Jf+4_N"><field name="tile">assets.tile`carpetLocation`</field></shadow></value><next><block type="mapplaceonrandomtile" id="q6Si2,OOhXYeqTw7D)-w"><value name="sprite"><block type="variables_get" id="=stvR[,!QF8#@2]zBOWy"><field name="VAR" id="G?,u5PhJaoz;f?r^QmRl">pc01</field></block></value><value name="tile"><shadow type="tileset_tile_picker" id="4AL[tBBniNV|?Il!KO-7"><field name="tile">assets.tile`pc01Location`</field></shadow></value><next><block type="mapplaceonrandomtile" id="y]O,yPszdNN6NjUQ^Bg+"><value name="sprite"><block type="variables_get" id="a%g`nOUZB/|6]zXHl7R`"><field name="VAR" id=";y1[$$}chDkah7-_]J;r">shelf01</field></block></value><value name="tile"><shadow type="tileset_tile_picker" id="N/jtoDo9FvNSI,/7o$ij"><field name="tile">assets.tile`shelf01Location`</field></shadow></value><next><block type="mapplaceonrandomtile" id="T#t--%leIw*imr+YwtYW"><value name="sprite"><block type="variables_get" id="h`$*^8?WmI*7g*oADN_B"><field name="VAR" id="H4G,$ZP:/UJ@$ENM~D?|">table01</field></block></value><value name="tile"><shadow type="tileset_tile_picker" id=".o4#x7xQK=P,/#-2OIBG"><field name="tile">assets.tile`table01Location`</field></shadow></value><next><block type="mapplaceonrandomtile" id="yFO!diW)l*i)hjpYx.G*"><value name="sprite"><block type="variables_get" id="t?+`?eiZXzIozekRaHN5"><field name="VAR" id="Mm89VZDzOU3b6+@(IIsE">table02</field></block></value><value name="tile"><shadow type="tileset_tile_picker" id="(zOFSmAj~yhKB;yGBFw5"><field name="tile">assets.tile`table02`</field></shadow></value><next><block type="mapplaceonrandomtile" id="$!-WOLCp^0x|,n*nBug4"><value name="sprite"><block type="variables_get" id="u@ISXaW,^[ZP?Gbm*Uwp"><field name="VAR" id="r!2V;5zxMXnmMB/7zvcu">couch01</field></block></value><value name="tile"><shadow type="tileset_tile_picker" id="W[00FK*/S5wbBxKI2m;7"><field name="tile">assets.tile`couch01`</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="function_definition" id=".$41%rLnD}W7cUiVauF*" x="-260" y="280"><mutation name="child" functionid="1hMjjB2Y,VxLv5LU[3/H"/><field name="function_name">child</field><statement name="STACK"><block type="variables_set" id="%)Pvw1.tpit]oq6-DUHC"><field name="VAR" id="{.(^m}q9@x3L845_3P`I">child1</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="rDSF-+bYbEBO)!@j!0lq"><value name="img"><shadow type="screen_image_picker" id="HxGBF%Xcn(+SVKBG2;6Y"><field name="img">img`
+. f f f . f f f f . f f f . 
+f f f f f c c c c f f f f f 
+f f f f b c c c c b f f f f 
+f f f c 3 c c c c 3 c f f f 
+. f 3 3 c c c c c c 3 3 f . 
+. f c c c c 4 4 c c c c f . 
+. f f c c 4 4 4 4 c c f f . 
+. f f f b f 4 4 f b f f f . 
+. f f 4 1 f d d f 1 4 f f . 
+. . f f d d d d d d f f . . 
+. . e f e 4 4 4 4 e f e . . 
+. e 4 f b 3 3 3 3 b f 4 e . 
+. 4 d f 3 3 3 3 3 3 c d 4 . 
+. 4 4 f 6 6 6 6 6 6 f 4 4 . 
+. . . . f f f f f f . . . . 
+. . . . f f . . f f . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"HxGBF%Xcn(+SVKBG2;6Y"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="=Kr%f8ecOeEoFiv]X-:/"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id=")I6h`GAw.a39UxD$gDY@"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="OmoDYluK.1gY!{L1HJ3^"><field name="VAR" id="{.(^m}q9@x3L845_3P`I">child1</field></block></value><next><block type="spritesetpos" id="[U]|;D1dY2aS.I~U`|}O"><value name="sprite"><block type="variables_get" id="Aq^/,tltV!9=z4[JVja8"><field name="VAR" id="{.(^m}q9@x3L845_3P`I">child1</field></block></value><value name="x"><shadow type="positionPicker" id="B-4_gf5P8I/1H_,W:Mif"><field name="index">30</field></shadow></value><value name="y"><shadow type="positionPicker" id="E(eqWLx{F|b~xV)3g$]T"><field name="index">65</field></shadow></value><next><block type="camerafollow" id="%DC+LJsLc#O_bX!?`Sd{"><value name="sprite"><block type="variables_get" id="#4:2D?g`M`yfhibwQeV}"><field name="VAR" id="{.(^m}q9@x3L845_3P`I">child1</field></block></value></block></next></block></next></block></next></block></statement></block></xml>
